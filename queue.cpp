@@ -78,9 +78,10 @@ public:
         int rear_position = rear;
 
         //cek apakah antrian kosong
+        
     }
 };
 int main()
 {
-    
+
 }
