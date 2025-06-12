@@ -21,6 +21,25 @@ class Queues
         cout << "enter a number: ";
         cin >> num;
         cout << endl;   
+
+        //1. cek apakah ada antrian penuh
+        if ((front == 0 && rear == max -1) || (front == rear + 1))
+        {
+            cout << "\nQueue overflow\n"; //1.a
+            return; //1.b
+        }
+
+        //2. cek apakah antrian kosong
+        if (front == -1)
+        {
+            front = 0; //2.a
+            rear = 0; //2.b
+        }
+        else
+        {
+            //jika rear berada di posisi terakgir array, kembali ke awal array
+            if (rear == max -1)
+        }
     }
 
 };
