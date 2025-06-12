@@ -39,6 +39,20 @@ class Queues
         {
             //jika rear berada di posisi terakgir array, kembali ke awal array
             if (rear == max -1)
+                rear = 0;
+            else
+                rear = rear + 1; 
+        }
+        queue_array[rear] = num;
+    }
+
+    void remove()
+    {
+        //cek apakah antrian kosong
+        if (front == -1)
+        {
+            cout << "queue underflow\n";
+            return;
         }
     }
 
